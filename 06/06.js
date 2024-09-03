@@ -21,22 +21,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
 //컴퓨터 랜덤 수 
       let comN = Math.floor(Math.random()*6) + 1; //1~6
       imgs[0].setAttribute('src', `../img/${comN}.png`);
-      imgs[0].setAttribute('src', `${comN}.png`);
 
       //사용자 선택수
       console.log(bt.textContent.charAt(1));
       let userN = parseInt(bt.textContent.charAt(1)) ;
       imgs[1].setAttribute('src', `../img/${userN}.png`);
-      imgs[1].setAttribute('src', `${userN}.png`);
 
 
       //결과 출력 
-      if (comN = === userN) {
-        msg.textContent = '맞음';
-      }
-      else{
-        msg.textContent = '틀림';
-      }
+      if (comN == userN)   msg.textContent = '맞음';
+      else  msg.textContent = '틀림';
     });
   }
 
