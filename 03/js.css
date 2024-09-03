@@ -1,0 +1,70 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  /* 유니버셜 ? */
+}
+
+
+header, main {
+  width : 60%;
+  margin-left: 20%;
+/* 윈도우 사이즈의 60% */
+  display : flex;
+
+}
+
+header {
+  height: 80px;
+  background-color: rgb(52, 140, 255);
+  color: white;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+
+header img {
+  width: 30px;
+  height: 30px;
+  /* 홈버튼 집모양 크기 조절 */
+}
+
+header div:hover {
+  background-color: rgb(255, 96, 247);
+  border-radius: 10px;
+  /* 홈 버튼 갖다대면 색 변함 */
+}
+
+main {
+  flex-direction: column; 
+  /* // 플렉스한 구역을 column(세로 높이) 로. 이걸 하면 밑으로 내려간다 */
+
+justify-content: center;
+align-items: center;
+/* 중간으로 맞춤 */
+
+height: 500px;
+border: 1px dotted darkblue;
+/* 점선으로 큰 본문 사각형 틀 만듬  */
+}
+
+
+button {
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 10px;
+  /* 랜덤 수 버튼' 버튼 색상, 크기 조절 */
+}
+
+button:hover {
+  background-color: aqua;
+  /* 랜덤 수 생성' 버튼 갖다대면 색 변함 */
+}
+
+section p {
+  justify-content: center;
+  align-items: center;
+  
+}

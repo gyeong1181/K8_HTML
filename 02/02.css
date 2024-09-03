@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* box-sizing = border-box; */
+
+header, main, footer {
+    background-color: aliceblue;
+    width: 80%;
+    margin-left: 10%;
+}
+
+header, main {
+    background-color: aliceblue;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+#menu {
+    background-color: skyblue;
+    color: white;
+}
+
+#menu> a {
+    background-color: blue;
+    color: white;
+}
+
+section {
+    background-color: white;
+}
+
+.s1, .s2 {
+    background-color: rgb(221, 253, 255);
+}
+
+
+header, header ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    height: 80px;
+    padding: 20px;
+    box-sizing: border-box;
+ }
+
+/* nav > ul { 도 가능 */
+/* header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+/* 상단 프로그램들의 점을 없앰 */
+ul {
+    list-style: none;
+}
+
+/* 상단 프로그램들의 간격을 줌 */
+.menuLi {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    height: 45px;
+
+    display: inline-flex;
+    
+    /* 수평수직맞춤 */
+    justify-content: center;
+    align-items: center;
+
+    background-color: royalblue;
+    color: white;
+}
+
+    .menuLi:hover{
+    background-color: chocolate;
+}
+
+/* 상단 프로그램들의 밑줄을 없앰 */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li > img {
+    width: 20px;
+    height: 20px;
+}
+
+article {
+    padding: 60px;
+}
+
+h1, article > p { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* p > span {
+    display: inline-flex;
+    flex-direction: row;
+} */
+
+section {
+    margin: 20px;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 5px;
+    /* 사각형 라운딩 */
+}
+
+.secDiv { 
+    display: flex ;
+    flex-direction: row;
+}
+
+h2 {
+    margin: 20px;
+}
+
+h1 {
+    margin: 50px;
+}
+
+p {
+    margin: 40px;
+}
+
+div > img {
+    border-radius: 80px;
+}
