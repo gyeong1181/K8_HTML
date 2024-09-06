@@ -105,15 +105,19 @@ console.log(`${arr} => 정렬 ${arr.sort((a,b) => b-a )}`)
 
 document.querySelector('DOMContentloaded', () => {
 //요소 가져오기
-  const divNum = document.querySelector('#divNum');
-  const divplus = document.querySelector('#divplus');
-  const divBonus = document.querySelector('#divBonus');
-  const bt = document.querySelector('.sec > button');
-  
+  // const divNum = document.querySelector('#divNum');
+  // const divplus = document.querySelector('#divplus');
+  // const divBonus = document.querySelector('#divBonus');
+  // const bt = document.querySelector('.sec > button');
+  disp(divNum, divplus, divBonus, 'none');
+
+
 // 요소 숨기기
-  divNum.style.display = 'none';
-  divplus.style.display = 'none';
-  divBonus.style.display = 'none';
+  // divNum.style.display = 'none';
+  // divplus.style.display = 'none';
+  // divBonus.style.display = 'none';
+disp(divNum, divplus, divBonus, 'none');
+
 
 // 버튼 클릭
 bt.addEventListener ('click', (e)=> {
@@ -133,6 +137,19 @@ arr.sort((a,b) => a-b);
 console.log(arr);
 console.log(arrBonus);
 
+
+arrr = arr.map( item =>
+    <span class='sp$(Math.floor(item/10)}'>${item}</span>');
+arr = arr.join('');
+divNum.innerHTML = arr;
+console.log(arr);
+
+
+arrBonus = arrBonus.map(item =>
+    <span class='sp$(Math.floor(item/10)}'>${item}</span>');
+    arrBonus = arrBonus.join('');
+    divBonus.innerHTML = arrBonus;
+)
 });
 
 });
